@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sudoku Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="loading" class="container-narrow">
+        <p>
+            <img src="assets/img/pacman.gif" /> Loading...
+        </p>
+    </div>
+    <div id="app-wrap" class="container-narrow hidden">
+        <h1>Sudoku Application</h1>
+        <p>
+            This demonstrates the following features of the SudokuWithBacktracking.js :
+        </p>
+        <ul>
+            <li>
+                Generating a Sudoku
+            </li>
+            <li>
+                Solving a Sudoku
+            </li>
+            <li>
+                Importing a Sudoku
+            </li>
+        </ul>
+        <br>
+        <br>
+        
+        <!-- Tabs -->
+        <ul id="generator-tabs" class="nav nav-tabs">
+            <li>
+                <a id="generate" rel="tooltip" title="Generate a puzzle" href="#">Generate</a>
+            </li>
+            <li>
+                <a id="import" rel="tooltip" title="Import your own puzzle" href="#">                      Import                        </a>
+            </li>
+        </ul>
+
+        <div id="import-controls">
+            <input id="import-string" class="input-block-level" placeholder="Enter a puzzle as a string of 81 digits, 1-9, and '.' as spaces." maxlength="81" type="text" />
+        </div>
+
+        <div id="puzzle-controls">
+            <a id="refresh" class="pull-right" rel="tooltip" title="Refresh the current puzzle" href="#">                    Refresh                  </a>
+        </div>
+
+        <!-- Sudoku board -->
+        <table class="table table-striped">
+            <tbody id="sudoku-board"></tbody>
+        </table>
+
+        <!-- Message box -->
+        <div id="message" class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">
+                &times;
+            </button>
+            <div id="text"></div>
+        </div>
+
+        <!-- Solver buttons -->
+        <div id="solver-controls">
+            <button id="solve" class="btn btn-primary" rel="tooltip" title="Solve the current puzzle!" data-placement="bottom">
+                Solve!
+            </button>
+            <button id="resetSolve" class="btn btn-primary" rel="tooltip" title="Reset the current puzzle!" data-placement="bottom">
+                Reset!
+            </button>
+            <button id="checkSolved" class="btn btn-primary" rel="tooltip" title="Validate the solved puzzle!" data-placement="bottom">
+                Validate!
+            </button>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/SudokuWithBacktracking.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
