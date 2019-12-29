@@ -44,8 +44,12 @@ Solve the current puzzle
 >>> sudoku.solve(puzzleArray)
 
 --------------------------------------------------------------------------------
-Use the "Refresh" button to re-generate the puzzle
-Use the "Import" button to import the puzzle
-Use the "Solve" button to solve the puzzle
-Use the "Reset" button to reset the puzzle
-Use the "Validate" button to validate the user input
+Use the "Refresh" button to re-generate the puzzle.
+
+Use the "Import" button to import the puzzle.
+
+Use the "Solve" button to solve the puzzle.
+
+Use the "Reset" button to reset the puzzle.
+
+Use the "Validate" button to validate the user input.
